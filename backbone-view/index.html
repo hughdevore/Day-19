@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>To-Do List</title>
+	</head>
+	<body>
+	<h1>What do you have to do?</h1>
+		<section id="app-view">
+				<input type="text" id="text-box">
+				<button type="button" id="click-button"> Add to List!</button>
+		</section>
+
+		<!-- these are my templates -->
+		<script type="text/html" id="my-list">
+			<div><%= todo %><input type="checkbox" id="check-box"></div>
+		</script>
+
+		<!-- These are my library files -->
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+		<script type="text/javascript" src="bower_components/backbone/backbone.js"></script>
+
+		<!-- These are my view files -->
+		<script type="text/javascript" src="scripts/views/ListView.js"></script>
+		<script type="text/javascript" src="scripts/views/AppView.js"></script>
+
+		<!-- This is my main file -->
+		<script type="text/javascript" src="scripts/main.js"></script>
+
+	</body>
+
+</html>
